@@ -1,0 +1,25 @@
+# Logs and databases
+*.log
+*.sqlite
+
+# Backup files
+*.bak
+*~
+*.swp
+*.tmp
+
+# OS generated files
+.DS_Store
+.directory
+Thumbs.db
+
+# Sensitive credentials that could accidentally be placed here
+.env
+.secrets
+*.key
+*.pem
+id_rsa
+id_ecdsa
+id_ed25519
+oauth_token
+credentials.json

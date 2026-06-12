@@ -1,0 +1,155 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+    "tab_bar": {
+        "show_pinned_tabs_in_separate_row": false
+    },
+    "status_bar": {
+        "show_active_file": true,
+        "line_endings_button": false
+    },
+    "inlay_hints": {
+        "show_background": false,
+        "enabled": false
+    },
+    "always_treat_brackets_as_autoclosed": false,
+    "tab_size": 4,
+    "hard_tabs": false,
+    "toolbar": {
+        "code_actions": true
+    },
+    "which_key": {
+        "enabled": false
+    },
+    "vim_mode": false,
+    "cursor_shape": "bar",
+    "cursor_blink": true,
+    "tabs": {
+        "file_icons": true,
+        "git_status": true
+    },
+    "title_bar": {
+        "show_branch_name": true,
+        "show_branch_status_icon": false,
+        "show_onboarding_banner": true,
+        "show_user_picture": true,
+        "show_user_menu": true,
+        "show_menus": false
+    },
+    "proxy": "",
+    "disable_ai": true,
+    "debugger": {
+        "dock": "left"
+    },
+    "outline_panel": {
+        "dock": "left"
+    },
+    "collaboration_panel": {
+        "dock": "left"
+    },
+    "agent": {
+        "dock": "right",
+        "favorite_models": [],
+        "model_parameters": []
+    },
+    "git_panel": {
+        "show_count_badge": false,
+        "diff_stats": true,
+        "file_icons": false,
+        "collapse_untracked_diff": false,
+        "tree_view": true,
+        "sort_by_path": false,
+        "dock": "left"
+    },
+    "cli_default_open_behavior": "new_window",
+    "agent_servers": {
+        "github-copilot-cli": {
+            "type": "registry"
+        },
+        "codex-acp": {
+            "type": "registry"
+        },
+        "claude-acp": {
+            "type": "registry"
+        }
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "session": {
+        "trust_all_worktrees": true
+    },
+    "project_panel": {
+        // https://zed.dev/docs/configuring-zed#project-panel
+        "sort_mode": "directories_first",
+        "hide_hidden": false,
+        "hide_root": false,
+        "git_status_indicator": true,
+        "diagnostic_badges": false,
+        "scrollbar": {
+            "show": "auto"
+        },
+        "bold_folder_labels": false,
+        "auto_fold_dirs": true,
+        "starts_open": true,
+        "auto_reveal_entries": true,
+        "file_icons": true,
+        "folder_icons": true,
+        "hide_gitignore": false,
+        "default_width": 225,
+        "button": true,
+        "dock": "left",
+        "git_status": true
+    },
+    "git": {
+        // https://zed.dev/docs/configuring-zed#git
+        "blame": {
+            "show_avatar": true
+        },
+        "git_gutter": "tracked_files",
+        "inline_blame": {
+            "show_commit_summary": false,
+            "enabled": true,
+            "position": "right"
+        }
+    },
+    "terminal": {
+        "toolbar": {
+            "breadcrumbs": false
+        },
+        "flexible": true,
+        "show_count_badge": false,
+        "dock": "bottom",
+        "font_family": "FiraCode Nerd Font Mono"
+    },
+    "minimap": {
+        "show": "always",
+        "thumb": "always"
+    },
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 500
+        }
+    },
+    "buffer_font_family": "Fira Code",
+    "base_keymap": "VSCode",
+    "icon_theme": {
+        "mode": "light",
+        "light": "Catppuccin Frappé",
+        "dark": "Catppuccin Frappé"
+    },
+    "ui_font_size": 16,
+    "buffer_font_size": 15,
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Xcode Presentation Darker"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "rules": [
+        {
+            "action": "block",
+            "pattern": "flameshot"
+        },
+        {
+            "action": "block",
+            "pattern": "Keyboard"
+        }
+    ]
+}

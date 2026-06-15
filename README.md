@@ -10,4 +10,4 @@ Linux configuration files (CachyOS / Wayland / Niri / Noctalia).
 * niri - Niri window manager configuration
 * noctalia - Noctalia Shell configuration and plugins
 * zed - Zed code editor settings
-
+* vscode - Visual Studio Code settings and profile

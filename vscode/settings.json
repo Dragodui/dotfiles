@@ -1,0 +1,58 @@
+{
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "editor.fontFamily": "Fira Code",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.lineHeight": 1.8,
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "editor.minimap.showSlider": "always",
+  "workbench.iconTheme": "catppuccin-frappe",
+  "chat.viewSessions.orientation": "stacked",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "explorer.confirmDelete": false,
+  "docker.extension.enableComposeLanguageServer": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://biomejs.dev": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "cSpell.userWords": [],
+  "chat.mcp.gallery.enabled": true,
+  "explorer.confirmPasteNative": false,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "workbench.browser.openLocalhostLinks": false,
+  "workbench.colorTheme": "Xcode Midnight (Dark)"
+}

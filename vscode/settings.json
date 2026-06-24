@@ -1,20 +1,92 @@
 {
+  // EDITOR — typography, cursor, line height
+  "editor.fontFamily": "Fira Code",
+  "editor.lineHeight": 1.8,
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.list.smoothScrolling": true,
-  "editor.fontFamily": "Fira Code",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
-  "editor.lineHeight": 1.8,
+  "editor.linkedEditing": true,                     // auto-rename paired HTML/JSX tags
+  "editor.minimap.showSlider": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // WORKBENCH — theme, icons, tree, lists
+  "workbench.colorTheme": "Xcode Midnight (Dark)",
+  "workbench.iconTheme": "catppuccin-frappe",
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
-  "editor.minimap.showSlider": "always",
-  "workbench.iconTheme": "catppuccin-frappe",
-  "chat.viewSessions.orientation": "stacked",
+  "workbench.list.smoothScrolling": true,
+  "workbench.browser.openLocalhostLinks": false,
+
+  // TERMINAL
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+
+  // FILES — autosave + excludes
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 500,
+  "files.participants.timeout": 2000,
+
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.git": true,
+    "**/dist": true,
+    "**/.next": true,
+    "**/build": true,
+    "**/.DS_Store": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/**": true,
+    "**/dist/**": true,
+    "**/.next/**": true,
+    "**/build/**": true,
+    "**/.cache/**": true,
+    "**/coverage/**": true,
+    "**/.turbo/**": true,
+    "**/.parcel-cache/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.next": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true
+  },
+
+  // EXPLORER — confirmations
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+
+  // TYPESCRIPT / JAVASCRIPT — perf tuning
+  "typescript.tsserver.maxTsServerMemory": 8192,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.tsserver.watchOptions": {
+    "watchFile": "useFsEventsOnParentDirectory",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority"
+  },
+  "js/ts.updateImportsOnFileMove.enabled": "prompt",
+
+  // FORMATTERS — Biome handles JS/TS/JSON/JSONC
+  "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[jsonc]":      { "editor.defaultFormatter": "biomejs.biome" },
+  "[json]":       { "editor.defaultFormatter": "biomejs.biome" },
+
+  // JSON — disable network fetch for schemas
+  "json.schemaDownload.enable": false,
+  "json.schemaDownload.trustedDomains": {
+    "https://biomejs.dev": true
+  },
+
+  // GIT
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "explorer.confirmDelete": false,
+
+  // EXTENSIONS
   "docker.extension.enableComposeLanguageServer": false,
   "github.copilot.enable": {
     "*": false,
@@ -22,37 +94,103 @@
     "markdown": false,
     "scminput": false
   },
-  "json.schemaDownload.trustedDomains": {
-    "https://schemastore.azurewebsites.net/": true,
-    "https://raw.githubusercontent.com/microsoft/vscode/": true,
-    "https://raw.githubusercontent.com/devcontainers/spec/": true,
-    "https://www.schemastore.org/": true,
-    "https://json.schemastore.org/": true,
-    "https://json-schema.org/": true,
-    "https://developer.microsoft.com/json-schemas/": true,
-    "https://biomejs.dev": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "explorer.confirmDragAndDrop": false,
-  "cSpell.userWords": [],
+
+  // CHAT / MCP
+  "chat.viewSessions.orientation": "stacked",
   "chat.mcp.gallery.enabled": true,
-  "explorer.confirmPasteNative": false,
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-  "js/ts.updateImportsOnFileMove.enabled": "always",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "[javascript]": {
-    "editor.defaultFormatter": "biomejs.biome"
+
+  // LANGUAGE-SPECIFIC SDK PATHS
+  "dart.flutterSdkPath": "D:\\flutter",
+
+  // GO — language server, formatter, linter
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false                    // Go uses tabs, not spaces
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "biomejs.biome"
+  "[go.mod]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
   },
-  "[json]": {
-    "editor.defaultFormatter": "biomejs.biome"
+
+  "go.useLanguageServer": true,
+  "go.toolsManagement.autoUpdate": true,
+  "go.formatTool": "gofumpt",                       // stricter than gofmt
+  "go.lintTool": "golangci-lint",                   // industry standard
+  "go.lintFlags": ["--fast"],                       // fast linters on save, full set in CI
+  "go.lintOnSave": "package",
+  "go.vetOnSave": "off",                            // golangci-lint includes govet, avoid double work
+  "go.buildOnSave": "off",                          // gopls reports compile errors live, save the CPU
+  "go.coverOnSave": false,
+  "go.testFlags": ["-v", "-race", "-count=1"],
+  "go.testTimeout": "60s",
+
+  "gopls": {
+    "ui.semanticTokens": true,
+    "ui.completion.usePlaceholders": true,
+    "ui.diagnostic.staticcheck": true,
+    "ui.diagnostic.analyses": {
+      "unusedparams": true,
+      "unusedwrite": true,
+      "useany": true,
+      "shadow": true
+    },
+    "ui.inlayhint.hints": {
+      "assignVariableTypes": true,
+      "compositeLiteralFields": true,
+      "constantValues": true,
+      "functionTypeParameters": true,
+      "parameterNames": true,
+      "rangeVariableTypes": true
+    },
+    "build.directoryFilters": ["-node_modules", "-vendor", "-.git"]
   },
-  "workbench.browser.openLocalhostLinks": false,
-  "workbench.colorTheme": "Xcode Midnight (Dark)"
+
+  // SPELL CHECKER (cspell)
+  "cSpell.enabled": true,
+  "cSpell.language": "en",
+  "cSpell.minWordLength": 4,
+  "cSpell.allowCompoundWords": true,
+  "cSpell.ignorePaths": [
+    "node_modules",
+    "dist",
+    "build",
+    ".next",
+    ".turbo",
+    ".cache",
+    "coverage",
+    "vendor",
+    ".git",
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml",
+    "*.min.js",
+    "*.min.css",
+    "*.map",
+    "*.svg",
+    "*.lock"
+  ],
+  "cSpell.enabledFileTypes": {
+    "typescript": true,
+    "typescriptreact": true,
+    "javascript": true,
+    "javascriptreact": true,
+    "markdown": true,
+    "plaintext": true,
+    "go": true,
+    "python": true,
+    "json": false,
+    "jsonc": false,
+    "yaml": false,
+    "log": false,
+    "csv": false,
+    "sql": false
+  },
+  "chat.disableAIFeatures": true
 }

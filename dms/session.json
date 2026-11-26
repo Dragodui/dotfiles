@@ -1,0 +1,14 @@
+{
+  "dockPins": {
+    "dock": [
+      "Alacritty",
+      "spotify",
+      "code",
+      "org.telegram.desktop",
+      "obsidian",
+      "org.gnome.Nautilus",
+      "discord",
+      "google-chrome"
+    ]
+  }
+}

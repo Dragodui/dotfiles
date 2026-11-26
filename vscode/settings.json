@@ -26,11 +26,11 @@
   "files.participants.timeout": 2000,
 
   "files.exclude": {
-    "**/node_modules": true,
-    "**/.git": true,
-    "**/dist": true,
+    // "**/node_modules": true,
+    // "**/.git": true,
+    // "**/dist": true,
     "**/.next": true,
-    "**/build": true,
+    // "**/build": true,
     "**/.DS_Store": true
   },
   "files.watcherExclude": {
@@ -73,9 +73,12 @@
   // FORMATTERS — Biome handles JS/TS/JSON/JSONC
   "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
   "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
-  "[typescriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[typescriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
   "[jsonc]":      { "editor.defaultFormatter": "biomejs.biome" },
   "[json]":       { "editor.defaultFormatter": "biomejs.biome" },
+    "[html]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
 
   // JSON — disable network fetch for schemas
   "json.schemaDownload.enable": false,
@@ -99,11 +102,6 @@
   // CHAT / MCP
   "chat.viewSessions.orientation": "stacked",
   "chat.mcp.gallery.enabled": true,
-
-  // LANGUAGE-SPECIFIC SDK PATHS
-  "dart.flutterSdkPath": "D:\\flutter",
-
-  // GO — language server, formatter, linter
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
@@ -135,7 +133,7 @@
   "gopls": {
     "ui.semanticTokens": true,
     "ui.completion.usePlaceholders": true,
-    "ui.diagnostic.staticcheck": true,
+    "ui.diagnostic.staticcheck": false,
     "ui.diagnostic.analyses": {
       "unusedparams": true,
       "unusedwrite": true,
@@ -195,5 +193,18 @@
   },
   "chat.disableAIFeatures": true,
   "security.workspace.trust.untrustedFiles": "open",
- 
+  "extensions.ignoreRecommendations": true,
+  "githubPullRequests.createOnPublishBranch": "never",
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "cSpell.userWords": [
+    "transaltes"
+  ]
 }

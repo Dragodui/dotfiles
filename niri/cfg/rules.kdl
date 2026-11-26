@@ -17,11 +17,43 @@
    }
 
     layer-rule {
-        match namespace="^noctalia-wallpaper*"
+        match namespace="^dms:blurwallpaper$"
         place-within-backdrop true
     }
+
     
 	window-rule {
 	    match app-id="spotify"
 	    open-floating false
+	}
+
+	window-rule {
+	    match app-id="^Emulator$" title="^Emulator$"
+	    open-floating false
+	}
+
+	// DragShift: radial menu + toasts float above tiles, never steal focus
+	window-rule {
+	    match title="^DragShift Menu$"
+	    open-floating true
+	    open-focused false
+	    geometry-corner-radius 0
+	    clip-to-geometry false
+	    draw-border-with-background false
+	    focus-ring { off; }
+	    border { off; }
+	    shadow { off; }
+	}
+
+	window-rule {
+	    match title="^DragShift Toast$"
+	    open-floating true
+	    open-focused false
+	    default-floating-position x=16 y=16 relative-to="bottom-right"
+	    geometry-corner-radius 0
+	    clip-to-geometry false
+	    draw-border-with-background false
+	    focus-ring { off; }
+	    border { off; }
+	    shadow { off; }
 	}

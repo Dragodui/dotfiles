@@ -1,0 +1,18 @@
+{
+  "fullscreenPowerMenu": {
+    "enabled": true
+  },
+  "quickCapture": {
+    "enabled": true
+  },
+  "dankPomodoroTimer": {
+    "enabled": true
+  },
+  "bongoCat": {
+    "enabled": true
+  },
+  "dankKDEConnect": {
+    "enabled": true,
+    "selectedDeviceId": "9ff1930d_b2d1_41ee_9142_7b9deabe7963"
+  }
+}

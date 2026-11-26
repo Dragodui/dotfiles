@@ -1,0 +1,47 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "bongoCat": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "bongoCat",
+      "commit": "c1fd7ff5432b10113fc06ade1e221a64af70d93f"
+    },
+    "dankDesktopWeather": {
+      "repo": "https://github.com/duxlabs-dev/dux-plugins",
+      "path": "DankDesktopWeather",
+      "commit": "a486ffcf15f81d578710fae31d6129b3a210d3f5"
+    },
+    "dankKDEConnect": {
+      "repo": "https://github.com/duxlabs-dev/dux-plugins",
+      "path": "DankKDEConnect",
+      "commit": "a486ffcf15f81d578710fae31d6129b3a210d3f5"
+    },
+    "dankNotepadModule": {
+      "repo": "https://github.com/duxlabs-dev/dux-plugins",
+      "path": "DankNotepadModule",
+      "commit": "a486ffcf15f81d578710fae31d6129b3a210d3f5"
+    },
+    "dankPomodoroTimer": {
+      "repo": "https://github.com/duxlabs-dev/dux-plugins",
+      "path": "DankPomodoroTimer",
+      "commit": "a486ffcf15f81d578710fae31d6129b3a210d3f5"
+    },
+    "dankTranslate": {
+      "repo": "https://github.com/alcxyz/DankTranslate",
+      "commit": "5f7d40b0902985c4990f3da24f373ba28a0e1895"
+    },
+    "fullscreenPowerMenu": {
+      "repo": "https://github.com/JDKamalakar/DMS-Fullscreen_Power_Menu",
+      "commit": "58926ac437507c020321f22cc82d803be7b7aae7"
+    },
+    "mediaPlayer": {
+      "repo": "https://github.com/bernardopg/mediaPlayer",
+      "commit": "0d4b75e7fe67942e1920e416124ef572c76e5dce"
+    },
+    "quickCapture": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "quickCapture",
+      "commit": "c1fd7ff5432b10113fc06ade1e221a64af70d93f"
+    }
+  }
+}
